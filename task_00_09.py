@@ -1,8 +1,6 @@
 def get_ordered_list_of_unique_vowels(string):
     unique_vowels = {
-        vowel.lower():None
-        for vowel in string
-        if vowel.lower() in 'aeiou'
+        vowel.lower(): None for vowel in string if vowel.lower() in "aeiou"
     }
 
     return unique_vowels.keys()
