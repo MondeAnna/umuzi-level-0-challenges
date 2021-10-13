@@ -8,4 +8,5 @@ def get_ordered_list_of_unique_vowels(string):
 
 def vowel_printer(string):
     vowels = get_ordered_list_of_unique_vowels(string)
-    print(f'Vowels: {", ".join(vowels)}')
+    unique_vowels = ", ".join(vowels)
+    print(f"Vowels: {unique_vowels}")
