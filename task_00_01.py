@@ -1,4 +1,3 @@
-
 x = 0
 y = 1
 print(x)
@@ -9,5 +8,3 @@ y = y + x
 
 print(x)
 print(y)
-
-

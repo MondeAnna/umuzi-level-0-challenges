@@ -1,4 +1,3 @@
-
 def time_formatter(passed_minutes):
     minutes_in_an_hour = 60
 
@@ -9,4 +8,3 @@ def time_formatter(passed_minutes):
     minutes_descriptor = 'minute' if minutes == 1 else 'minutes'
 
     return f'{hours} {hours_descriptor}, {minutes} {minutes_descriptor}'
-
