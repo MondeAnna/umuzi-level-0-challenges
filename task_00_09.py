@@ -1,12 +1,8 @@
-def get_ordered_list_of_unique_vowels(string):
-    unique_vowels = {
-        vowel.lower(): None for vowel in string if vowel.lower() in "aeiou"
-    }
-
-    return unique_vowels.keys()
+from collections import Counter
 
 
 def vowel_printer(string):
-    vowels = get_ordered_list_of_unique_vowels(string)
-    unique_vowels = ", ".join(vowels)
-    print(f"Vowels: {unique_vowels}")
+    vowels = Counter()
+    vowels.update(vowel.lower() for vowel in string if vowel.lower() in "aeiou")
+    vowels_str = ", ".join(vowels)
+    print(f"Vowels: {vowels_str}")
